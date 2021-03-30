@@ -13,7 +13,7 @@ TEST(Nadezhda_Zhbanova_ComplexNumberTest, equality_of_complex_numbers) {
     ComplexNumber z0(re_0, im_0);
     ComplexNumber z1(re_1, im_1);
 
-    ASSERT_EQ(z0 == z1, true);
+    ASSERT_TRUE(z0 == z1);
 }
 
 TEST(Nadezhda_Zhbanova_ComplexNumberTest, divide_the_number_by_itself) {
@@ -29,11 +29,12 @@ TEST(Nadezhda_Zhbanova_ComplexNumberTest, divide_the_number_by_itself) {
     ASSERT_EQ(z, expected_z);
 }
 
-TEST(Nadezhda_Zhbanova_ComplexNumberTest, difference_and_get_re_get_im) {
-    ComplexNumber z1(3.15, 6.3);
-    ComplexNumber z2(6.3, 3.15);
-    ComplexNumber z = z2 - z1;
+TEST(Nadezhda_Zhbanova_ComplexNumberTest, create_zero) {
+    double re = 0.0;
+    double im = 0.0;
 
-    ASSERT_EQ(3.15, z.getRe());
-    ASSERT_EQ(-3.15, z.getIm());
+    ComplexNumber z(re, im);
+
+    ASSERT_EQ(re, z.getRe());
+    ASSERT_EQ(im, z.getIm());
 }
