@@ -29,12 +29,14 @@ TEST(Nadezhda_Zhbanova_ComplexNumberTest, divide_the_number_by_itself) {
     ASSERT_EQ(z, expected_z);
 }
 
-TEST(Nadezhda_Zhbanova_ComplexNumberTest, create_zero) {
-    double re = 0.0;
-    double im = 0.0;
+TEST(Nadezhda_Zhbanova_ComplexNumberTest, inequality_of_complex_numbers) {
+    double re_0 = 3.15;
+    double re_1 = 3.15;
+    double im_0 = 8.35;
+    double im_1 = 7.35;
 
-    ComplexNumber z(re, im);
+    ComplexNumber z0(re_0, im_0);
+    ComplexNumber z1(re_1, im_1);
 
-    ASSERT_EQ(re, z.getRe());
-    ASSERT_EQ(im, z.getIm());
+    ASSERT_TRUE(z0 != z1);
 }
