@@ -93,7 +93,7 @@ TEST_F(CalculatePriceApplicationTest, Calculate_Price_With_Maximum_Discount) {
     Assert("Total Sum = 100.4");
 }
 
-TEST_F(CalculatePriceApplicationTest, Get_Correct_Discount_On_Two_Different_Books) {
+TEST_F(CalculatePriceApplicationTest, Get_Correct_Discount_On_Two_Diff_Books) {
     std::vector<std::string> args = { "0", "1", "1", "0", "0" };
 
     Act(args);
