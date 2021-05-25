@@ -11,9 +11,9 @@ class CalculatePriceApplication {
     CalculatePriceApplication() = default;
     std::string operator()(int argc, const char ** argv);
  private:
-    void Help(const char *appname);
-    bool ValidateNumbersOfArguments(int argc, const char ** argv);
-    bool IsArgumentsInteger(const char ** argv);
+    void help(const char *appname);
+    bool validateNumbersOfArguments(int argc, const char ** argv);
+    bool isArgumentsInteger(const char ** argv);
     std::string message_;
     std::vector <int> books;
 };
