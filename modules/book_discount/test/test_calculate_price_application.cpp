@@ -64,7 +64,7 @@ TEST_F(CalculatePriceApplicationTest, Can_Detect_Negative_Arguments) {
 
     Act(args);
 
-    Assert("ERROR: Mustn't be contain negative numbers\\..*");
+    Assert("ERROR: Don't negative numbers\\..*");
 }
 
 TEST_F(CalculatePriceApplicationTest, Can_Detect_Wrong_Overflow) {

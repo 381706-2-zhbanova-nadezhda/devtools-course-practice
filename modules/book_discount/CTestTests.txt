@@ -45,7 +45,7 @@ add_test(
 )
 
 set_tests_properties (${prefix}_can_Detect_Negative_Arguments PROPERTIES
-    PASS_REGULAR_EXPRESSION "ERROR: Mustn't be contain negative numbers"
+    PASS_REGULAR_EXPRESSION "ERROR: Don't negative numbers"
     LABELS "${MODULE}")
 
 add_test(
