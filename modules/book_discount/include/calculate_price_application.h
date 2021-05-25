@@ -12,7 +12,7 @@ class CalculatePriceApplication {
     std::string operator()(int argc, const char ** argv);
  private:
     void Help(const char *appname);
-    bool ValidateNambersOfArguments(int argc, const char ** argv);
+    bool ValidateNumbersOfArguments(int argc, const char ** argv);
     bool IsArgumentsInteger(const char ** argv);
     std::string message_;
     std::vector <int> books;

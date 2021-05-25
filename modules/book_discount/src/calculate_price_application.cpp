@@ -13,7 +13,7 @@ std::string CalculatePriceApplication::operator()(int argc,
     char * e;
     std::ostringstream stream;
 
-    if (!ValidateNambersOfArguments(argc, argv)) {
+    if (!ValidateNumbersOfArguments(argc, argv)) {
         return message_;
     }
 
@@ -53,7 +53,7 @@ void CalculatePriceApplication::Help(const char *appname) {
            "Where all arguments are not negative integer numbers.\n";
 }
 
-bool CalculatePriceApplication::ValidateNambersOfArguments(int argc,
+bool CalculatePriceApplication::ValidateNumbersOfArguments(int argc,
         const char ** argv) {
     if (argc == 1) {
         Help(argv[0]);

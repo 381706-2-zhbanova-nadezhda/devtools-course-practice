@@ -76,11 +76,11 @@ set_tests_properties (${prefix}_can_Calculate_Price_With_Maximum_Discount PROPER
     LABELS "${MODULE}")
 
 add_test(
-    NAME ${prefix}_can_Correct_Discount_On_Two_Different_Books
+    NAME ${prefix}_can_Get_Correct_Discount_On_Two_Different_Books
     COMMAND ${APPLICATION} 0 1 1 0 0
 )
 
-set_tests_properties (${prefix}_can_Correct_Discount_On_Two_Different_Books PROPERTIES
+set_tests_properties (${prefix}_can_Get_Correct_Discount_On_Two_Different_Books PROPERTIES
     PASS_REGULAR_EXPRESSION "15.2"
     LABELS "${MODULE}")
 
